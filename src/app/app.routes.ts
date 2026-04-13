@@ -5,11 +5,6 @@ export const routes: Routes = [
 
 {
   path: '',
-  loadComponent:() => import('./features/catalogo/catalogo.component').then(c => c.CatalogoComponent)
+  loadComponent:() => import('./features/home/home.component').then(c => c.HomeComponent)
 },
-{
-path: 'detalles/:id',
-loadComponent:() => import('./features/detalles/detalles.component').then(c => c.DetallesComponent)
-
-}
 ];

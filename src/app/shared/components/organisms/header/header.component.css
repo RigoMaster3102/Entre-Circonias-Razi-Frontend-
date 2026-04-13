@@ -1,0 +1,30 @@
+header{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 1.5rem;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.header-left{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-center{
+  font-family: 'Antic Didone', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.header-right{
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  justify-content: flex-end;
+}
