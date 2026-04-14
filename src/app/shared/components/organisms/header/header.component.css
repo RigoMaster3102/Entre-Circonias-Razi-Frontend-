@@ -27,4 +27,20 @@ header{
   gap: 1rem;
   flex: 1;
   justify-content: flex-end;
+  margin-right: 3rem;
+}
+
+.menu-btn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+  display: flex;
+  align-items: center;
+
+}
+
+.menu-btn:hover{
+  opacity: 0.8;
 }

@@ -1,6 +1,10 @@
 <header>
   <div class="header-left">
-    <span>Menu</span>
+    <button class="menu-btn"
+      (click)="menuSidebar.toggleSidebar()">
+        <app-icon nombre="menu"
+          size="1.875rem"/>
+    </button>
   </div>
   <div class="header-center">
     <h1>ENTRE CIRCONIAS RAZI</h1>

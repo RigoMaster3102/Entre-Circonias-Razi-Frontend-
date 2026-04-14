@@ -1,0 +1,21 @@
+
+<div class="sidebar-container">
+  <div class="sidebar-header">
+    <button class="closeMenu"
+    (click)="closeSidebar.toggleSidebar()">
+      <app-icon
+        nombre="close"
+        size="1.875rem"/>
+        <span class="close-text">Cerrar</span>
+    </button>
+  </div>
+
+  <nav class="sidebar-nav">
+      <a routerLink="/anillos">Anillos</a>
+      <a routerLink="/brazaletes">Brazaletes</a>
+      <a routerLink="/collares">Collares</a>
+      <a routerLink="/aretes">Aretes</a>
+  </nav>
+</div>
+
+

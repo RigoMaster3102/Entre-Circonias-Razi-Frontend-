@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { IconComponent } from '../../atoms/icon/icon.component';
+import { UiService } from '../../../../infrastructure/services/ui.service';
 @Component({
   selector: 'app-header',
   imports: [IconComponent],
@@ -7,5 +8,8 @@ import { IconComponent } from '../../atoms/icon/icon.component';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
+
+    menuSidebar = inject(UiService);
+
 
 }
