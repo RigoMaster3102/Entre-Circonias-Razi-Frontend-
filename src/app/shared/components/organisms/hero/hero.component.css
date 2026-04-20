@@ -1,0 +1,41 @@
+.hero-container{
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+  background-image:url('/images/panel-ia.png');
+
+}
+
+.hero-content{
+  margin-top: -12rem;
+   margin-left: 4.4375rem;
+}
+
+.hero-title{
+  font-family: 'Playfair Display', serif;
+  font-size:  2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+.hero-description{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 55ch;
+  line-height: 1.5;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-left: 7.125rem;
+  margin-top: 2.5rem;
+}

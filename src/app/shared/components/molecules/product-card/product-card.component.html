@@ -1,0 +1,20 @@
+<div class="card-container">
+@if (isMoreButton()) {
+  <div class="more-content">
+    <div class="icon-wrapper">
+      <app-icon nombre="add" size="4rem"/>
+    </div>
+    <span class="more-text">Ver todo</span>
+  </div>
+}@else {
+    <div class="product-content">
+      <div class="image-wrapper">
+        <img [src]="imageUrl()" [alt]="name()" class="product-image">
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">{{ name() }}</h3>
+        <p class="product-price">{{ price() | currency:'MXN':'symbol-narrow'}} MXN</p>
+      </div>
+    </div>
+}
+</div>

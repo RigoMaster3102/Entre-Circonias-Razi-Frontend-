@@ -1,0 +1,15 @@
+
+<section class="novedades-section">
+  <h2 class="title">Novedades</h2>
+<div class="scroll-container">
+@for (item of productos() | slice:0:8; track item.id) {
+
+  <app-product-card [imageUrl]="item.fotos[0].url" [name]="item.titulo" [price]="item.precio" [isMoreButton]="false" />
+
+}
+@if ((productos()?.length ?? 0) > 8 ) {
+  <app-product-card [isMoreButton]="true"/>
+}
+</div>
+</section>
+

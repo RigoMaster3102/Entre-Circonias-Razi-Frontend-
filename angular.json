@@ -8,7 +8,12 @@
   "projects": {
     "Entre-Circonias-Razi": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+                  "style": "css",
+                  "type": "component"
+                }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
