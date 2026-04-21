@@ -1,0 +1,5 @@
+<div class="filtros-grupo-precios">
+  @for (item of filtro(); track $index) {
+    <app-filtro-precios  [imageUrl]="item.imageUrl" [precio]= "item.precio" />
+  }
+</div>

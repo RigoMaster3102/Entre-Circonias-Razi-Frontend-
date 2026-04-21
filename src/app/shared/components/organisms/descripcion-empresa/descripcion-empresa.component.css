@@ -1,0 +1,36 @@
+.empresa-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+}
+
+.empresa-titulo {
+
+  font-family: 'Antic Didone', serif;
+  color: #D17EA8;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.empresa-contenido {
+
+  max-width: 129ch;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.empresa-texto {
+
+  font-family: 'Antic Didone', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+  font-size: 1.125rem;
+}
