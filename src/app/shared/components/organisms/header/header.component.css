@@ -44,3 +44,18 @@ header{
 .menu-btn:hover{
   opacity: 0.8;
 }
+
+@media (max-width: 600px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+
+  .header-center {
+    display: none;
+  }
+
+  .header-right {
+    margin-right: 0;
+    justify-content: flex-start;
+  }
+}

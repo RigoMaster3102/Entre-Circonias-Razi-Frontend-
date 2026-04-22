@@ -7,4 +7,10 @@ import { IconComponent } from "../../atoms/icon/icon.component";
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css',
 })
-export class FooterComponent {}
+export class FooterComponent {
+
+  redesSociales = [
+  { name: '/icons/instagram.svg', link: 'https://www.instagram.com/entre.circonias_razi/' },
+  { name: '/icons/tiktok.svg', link: 'https://www.tiktok.com/@entre.circonias.razi?lang=es-419' },
+  ]
+}

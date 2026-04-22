@@ -34,3 +34,20 @@
   color: #000000;
   font-size: 1.125rem;
 }
+
+@media (max-width: 600px){
+  .empresa-container {
+  padding: 2.5rem 0.75rem;
+}
+.empresa-titulo {
+  font-size: 1.5rem;
+}
+.empresa-contenido {
+
+  max-width: 50ch;
+}
+.empresa-texto {
+
+  font-size: 1rem;
+}
+}

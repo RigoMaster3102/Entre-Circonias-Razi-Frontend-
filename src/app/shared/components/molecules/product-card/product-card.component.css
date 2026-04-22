@@ -87,3 +87,19 @@
   object-fit: cover;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 600px){
+  .card-container{
+    width: 14.8125rem;
+    height: 17.625rem;
+  }
+  .more-text{
+    font-size: 0.7rem;
+  }
+  .product-name{
+    font-size: 0.7rem;
+  }
+  .product-price{
+    font-size: 0.7rem;
+  }
+}

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input} from '@angular/core';
 
 @Component({
   selector: 'app-icon',
@@ -9,4 +9,5 @@ import { Component, input } from '@angular/core';
 export class IconComponent {
 nombre = input.required<string>();
 size = input.required<string>();
+  esImagenLocal = computed(() => this.nombre().endsWith('.svg') || this.nombre().endsWith('.png'));
 }

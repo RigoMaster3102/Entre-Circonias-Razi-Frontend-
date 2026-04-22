@@ -16,3 +16,15 @@
   display: flex;
   gap: 1.5rem;
 }
+
+@media (max-width: 600px) {
+  .footer{
+  flex-direction:column;
+  gap: 1.5rem;
+}
+
+.text-name{
+  font-size: 1rem;
+}
+
+}

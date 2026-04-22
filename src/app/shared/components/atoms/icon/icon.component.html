@@ -1,1 +1,7 @@
-<span class="material-symbols-outlined" [style.font-size]="size()"> {{nombre()}}</span>
+@if (esImagenLocal()) {
+ <img [src]="nombre()" [style.width]="size()" [style.height]="size()" alt="Red Social">
+}@else {
+  <span class="material-symbols-outlined" [style.font-size]="size()"> {{nombre()}}</span>
+}
+
+

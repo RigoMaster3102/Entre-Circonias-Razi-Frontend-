@@ -3,8 +3,13 @@
   <p class="text-name">ENTRE CIRCONIAS RAZI</p>
 </div>
 
+@for (item of redesSociales; track $index) {}
 <nav class="web-social">
-  <app-icon nombre="facebook" size="3rem"/>
+  @for (red of redesSociales; track $index) {
+      <a [href]="red.link" target="_blank">
+        <app-icon [nombre]="red.name" [size]="red.link"/>
+      </a>
+    }
 </nav>
 
 </footer>

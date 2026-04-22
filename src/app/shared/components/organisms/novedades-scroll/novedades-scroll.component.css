@@ -14,3 +14,14 @@
   margin-top: 2.9375rem;
   margin-left: 2rem;
 }
+
+@media (max-width: 600px){
+  .scroll-container{
+    margin-left: 1.625rem;
+    margin-right: 1rem;
+  }
+  .novedades-section h2{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+}
