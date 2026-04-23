@@ -1,8 +1,8 @@
-import { Component, inject } from '@angular/core';
-import { ProductService } from '../../../../infrastructure/services/product.service';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { Component, input } from '@angular/core';
+
 import { ProductCardComponent } from '../../molecules/product-card/product-card.component';
 import { SlicePipe } from '@angular/common';
+import { Producto } from '../../../../core/domain/models/product.model';
 @Component({
   selector: 'app-novedades-scroll',
   imports: [ProductCardComponent, SlicePipe],
@@ -11,9 +11,6 @@ import { SlicePipe } from '@angular/common';
 })
 export class NovedadesScrollComponent {
 
-  novedades = inject(ProductService);
-  productos = toSignal(this.novedades.getProductos());
-
-
+  productos = input<Producto[]>();
 
 }

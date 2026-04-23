@@ -1,0 +1,12 @@
+<app-header/>
+
+<main class="content-area">
+  <ng-content></ng-content>
+</main>
+
+<app-footer/>
+
+@if (menuActivo.isSidebarOpen()) {
+  <app-sidebar/>
+}
+
