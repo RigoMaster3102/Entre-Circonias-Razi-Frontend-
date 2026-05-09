@@ -1,4 +1,4 @@
-<header>
+<header [class.header-search-activo] = "menuSidebar.isSearchOpen()">
   <div class="header-left">
     <button class="menu-btn"
       (click)="menuSidebar.toggleSidebar()">
@@ -7,15 +7,18 @@
     </button>
   </div>
   <div class="header-center">
-    <h1>ENTRE CIRCONIAS RAZI</h1>
+   <h1> <a [routerLink]="['']">  ENTRE CIRCONIAS RAZI </a> </h1>
   </div>
   <nav class="header-right">
       <app-icon
        nombre="inbox"
        size="1.875rem"/>
+
+    <button class="menu-btn" (click)="menuSidebar.toogleSearch()">
        <app-icon
        nombre="search"
        size="1.875rem"/>
+    </button>
        <app-icon
        nombre="favorite_border"
        size="1.875rem"/>
@@ -27,3 +30,12 @@
        size="1.875rem"/>
   </nav>
 </header>
+<div>
+  @if (menuSidebar.isSearchOpen()) {
+  <app-search (terminoBusqueda)="buscarProducto($event)"/>
+}
+</div>
+
+
+
+

@@ -1,0 +1,13 @@
+<div class="search-content">
+  <app-icon nombre="search" size="1.875rem"/>
+  <input
+    type="text"
+    class="search-input"
+    placeholder="Busca un producto en especial"
+    #busqueda
+    (keyup.enter)="terminoBusqueda.emit(busqueda.value)"/>
+
+  <button class="close-btn" (click)="searchActive.toogleSearch()">
+    <app-icon nombre="close" size="1.875rem"/>
+  </button>
+</div>

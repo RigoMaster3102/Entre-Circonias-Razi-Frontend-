@@ -19,6 +19,11 @@ export interface Collection{
   nombre: string;
 }
 
+export interface Categorias{
+  id: number;
+  nombre: string;
+}
+
 export interface Producto{
   id: number;
   titulo: string;
@@ -31,6 +36,8 @@ export interface Producto{
   material ?: Material;
   sexo ?: Sexo;
   collection ?: Collection;
-
+  categoria ?: Categorias;
   fotos: FotoProducto[];
+  fechaCreacion: Date;
+  fechaActualizacion: Date;
 }

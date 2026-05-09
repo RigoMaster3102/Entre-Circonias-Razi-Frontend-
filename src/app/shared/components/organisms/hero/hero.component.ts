@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ButtonComponent } from "../../atoms/button/button.component";
 
 @Component({
@@ -9,4 +9,9 @@ import { ButtonComponent } from "../../atoms/button/button.component";
 })
 export class HeroComponent {
 
+  title = input<string>();
+  description = input<string>();
+  imageUrl = input.required<string>();
+  showButton = input.required<boolean>();
+  coleccion = input<string>();
 }

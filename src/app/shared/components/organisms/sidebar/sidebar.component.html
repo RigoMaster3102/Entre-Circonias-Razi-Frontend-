@@ -11,10 +11,10 @@
   </div>
 
   <nav class="sidebar-nav">
-      <a routerLink="/anillos">Anillos</a>
-      <a routerLink="/brazaletes">Brazaletes</a>
-      <a routerLink="/collares">Collares</a>
-      <a routerLink="/aretes">Aretes</a>
+      <a [routerLink]="['/resultadosBusqueda']" [queryParams]="{categoryName:'Anillos'}">Anillos</a>
+      <a [routerLink]="['/resultadosBusqueda']" [queryParams]="{categoryName:'Brazaletes'}">Brazaletes</a>
+      <a [routerLink]="['/resultadosBusqueda']" [queryParams]="{categoryName: 'Collares'}">Collares</a>
+      <a [routerLink]="['/resultadosBusqueda']" [queryParams]="{categoryName:'Aretes'}">Aretes</a>
   </nav>
 </div>
 

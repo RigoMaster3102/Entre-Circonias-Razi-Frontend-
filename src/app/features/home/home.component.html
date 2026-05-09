@@ -1,6 +1,10 @@
 <app-main-layout>
-<app-hero/>
-<app-novedades-scroll [productos]="productos()"/>
+<app-hero title="Tesoros de Plata Inspirados en la Costa"
+  description="Mar & Plata Artesanía te invita a descubrir una colección única de joyas de plata de ley, diseñadas y elaboradas a mano con el amor por el océano como guía. Cada pieza captura la serena belleza de la luna sobre el agua, la textura de la madera a la deriva y la pureza de las perlas."
+  imageUrl="/images/panel-ia.png"
+  [showButton]= "true"/>
+
+  <app-novedades-scroll [productos]="productos()"/>
 <app-filtros-precios-agrupados
 [filtro]="[{precio:200, imageUrl:'https://i.pinimg.com/736x/c7/2a/ae/c72aaec671cc71206c4a0e9d6433d065.jpg'},
     {precio:500, imageUrl:'https://i.pinimg.com/736x/e0/cf/33/e0cf336a3ae588f38ae9a7ddf7463a7e.jpg'},

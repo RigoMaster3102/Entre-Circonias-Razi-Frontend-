@@ -4,8 +4,8 @@ import { NovedadesScrollComponent } from "../../shared/components/organisms/nove
 import { FiltrosPreciosAgrupadosComponent } from "../../shared/components/organisms/filtros-precios-agrupados/filtros-precios-agrupados.component";
 import { DescripcionEmpresaComponent } from "../../shared/components/organisms/descripcion-empresa/descripcion-empresa.component";
 import { MainLayoutComponent } from "../../shared/components/templates/main-layout/main-layout.component";
-import { ProductService } from '../../infrastructure/services/product.service';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { GetProductsUseCase } from '../../core/use-cases/get-products.use-case';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +15,6 @@ import { toSignal } from '@angular/core/rxjs-interop';
 })
 export class HomeComponent {
 
-    novedades = inject(ProductService);
-    productos = toSignal(this.novedades.getProductos());
+private _getProductsUseCase = inject(GetProductsUseCase);
+productos = toSignal(this._getProductsUseCase.execute());
 }

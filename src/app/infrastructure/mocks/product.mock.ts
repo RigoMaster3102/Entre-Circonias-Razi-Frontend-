@@ -13,9 +13,10 @@ export const PRODUCTOS_MOCK: Producto[] = [
     material: { id: 1, nombre: 'Plata 925' },
     sexo: { id: 2, nombre: 'Mujer' },
     collection: { id: 1, nombre: 'Bodas y Compromisos' },
-    fotos: [
-      { id: 1, url: 'https://m.media-amazon.com/images/I/61+yCe1+ePL._AC_SX679_.jpg' }
-    ]
+    categoria: { id: 1, nombre: 'Anillos' },
+    fotos: [ { id: 1, url: 'https://m.media-amazon.com/images/I/61+yCe1+ePL._AC_SX679_.jpg' } ],
+    fechaCreacion: new Date('2024-01-15T10:00:00'),
+    fechaActualizacion: new Date('2024-01-16T12:30:00'),
   },
   {
     id: 2,
@@ -28,9 +29,11 @@ export const PRODUCTOS_MOCK: Producto[] = [
     disponible: true,
     material: { id: 2, nombre: 'Plata 950' },
     sexo: { id: 1, nombre: 'Hombre' },
-    fotos: [
-      { id: 2, url: 'https://m.media-amazon.com/images/I/51zzdiBKLDL._AC_SX679_.jpg' }
-    ]
+    collection: { id: 4, nombre: 'Básicos' },
+    categoria: { id: 2, nombre: 'Brazaletes' },
+    fotos: [ { id: 2, url: 'https://m.media-amazon.com/images/I/51zzdiBKLDL._AC_SX679_.jpg' } ],
+    fechaCreacion: new Date('2024-02-10T09:15:00'),
+    fechaActualizacion: new Date('2024-02-10T09:15:00'),
   },
   {
     id: 3,
@@ -38,15 +41,16 @@ export const PRODUCTOS_MOCK: Producto[] = [
     precio: 650.00,
     piezasDisponibles: 8,
     descripcion: 'Delicada cadena de plata con un dije de corazón pulido.',
-    talla: 45, // centímetros
+    talla: 45,
     estilo: 'Romántico',
     disponible: true,
     material: { id: 1, nombre: 'Plata 925' },
     sexo: { id: 2, nombre: 'Mujer' },
     collection: { id: 2, nombre: 'Día de las Madres' },
-    fotos: [
-      { id: 3, url: 'https://m.media-amazon.com/images/I/41IXypaIH3L._AC_SX679_.jpg' }
-    ]
+    categoria: { id: 3, nombre: 'Collares' },
+    fotos: [ { id: 3, url: 'https://m.media-amazon.com/images/I/41IXypaIH3L._AC_SX679_.jpg' } ],
+    fechaCreacion: new Date('2024-03-05T14:20:00'),
+    fechaActualizacion: new Date('2024-03-08T11:00:00'),
   },
   {
     id: 4,
@@ -54,14 +58,16 @@ export const PRODUCTOS_MOCK: Producto[] = [
     precio: 450.00,
     piezasDisponibles: 15,
     descripcion: 'Arracadas clásicas tubulares de plata, ligeras y versátiles.',
-    talla: 3, // centímetros de diámetro
+    talla: 3,
     estilo: 'Minimalista',
     disponible: true,
     material: { id: 1, nombre: 'Plata 925' },
     sexo: { id: 2, nombre: 'Mujer' },
-    fotos: [
-      { id: 4, url: 'https://m.media-amazon.com/images/I/51emNCEw72L._AC_SY679_.jpg' }
-    ]
+    collection: { id: 4, nombre: 'Básicos' },
+    categoria: { id: 4, nombre: 'Aretes' },
+    fotos: [ { id: 4, url: 'https://m.media-amazon.com/images/I/51emNCEw72L._AC_SY679_.jpg' } ],
+    fechaCreacion: new Date('2024-04-12T16:45:00'),
+    fechaActualizacion: new Date('2024-04-12T16:45:00'),
   },
   {
     id: 5,
@@ -75,9 +81,10 @@ export const PRODUCTOS_MOCK: Producto[] = [
     material: { id: 2, nombre: 'Plata 950' },
     sexo: { id: 1, nombre: 'Hombre' },
     collection: { id: 3, nombre: 'Caballero Exclusivo' },
-    fotos: [
-      { id: 5, url: 'https://m.media-amazon.com/images/I/61QtHECVQdL._AC_UL480_FMwebp_QL65_.jpg' }
-    ]
+    categoria: { id: 1, nombre: 'Anillos' },
+    fotos: [ { id: 5, url: 'https://m.media-amazon.com/images/I/61QtHECVQdL._AC_UL480_FMwebp_QL65_.jpg' } ],
+    fechaCreacion: new Date('2024-05-20T10:30:00'),
+    fechaActualizacion: new Date('2024-05-21T09:00:00'),
   },
   {
     id: 6,
@@ -90,9 +97,11 @@ export const PRODUCTOS_MOCK: Producto[] = [
     disponible: true,
     material: { id: 1, nombre: 'Plata 925' },
     sexo: { id: 3, nombre: 'Unisex' },
-    fotos: [
-      { id: 6, url: 'https://m.media-amazon.com/images/I/71cBvlpN3qL._AC_SY500_.jpg' }
-    ]
+    collection: { id: 4, nombre: 'Básicos' },
+    categoria: { id: 2, nombre: 'Brazaletes' },
+    fotos: [ { id: 6, url: 'https://m.media-amazon.com/images/I/71cBvlpN3qL._AC_SY500_.jpg' } ],
+    fechaCreacion: new Date('2024-06-15T08:00:00'),
+    fechaActualizacion: new Date('2024-06-15T08:00:00'),
   },
   {
     id: 7,
@@ -106,9 +115,10 @@ export const PRODUCTOS_MOCK: Producto[] = [
     material: { id: 1, nombre: 'Plata 925' },
     sexo: { id: 2, nombre: 'Mujer' },
     collection: { id: 4, nombre: 'Básicos' },
-    fotos: [
-      { id: 7, url: 'https://m.media-amazon.com/images/I/41nHHIUBoAL._AC_UL480_FMwebp_QL65_.jpg' }
-    ]
+    categoria: { id: 4, nombre: 'Aretes' },
+    fotos: [ { id: 7, url: 'https://m.media-amazon.com/images/I/41nHHIUBoAL._AC_UL480_FMwebp_QL65_.jpg' } ],
+    fechaCreacion: new Date('2024-07-01T11:20:00'),
+    fechaActualizacion: new Date('2024-07-05T14:10:00'),
   },
   {
     id: 8,
@@ -121,9 +131,11 @@ export const PRODUCTOS_MOCK: Producto[] = [
     disponible: true,
     material: { id: 1, nombre: 'Plata 925' },
     sexo: { id: 3, nombre: 'Unisex' },
-    fotos: [
-      { id: 8, url: 'https://m.media-amazon.com/images/I/51T6nBs1+oL._AC_SX679_.jpg' }
-    ]
+    collection: { id: 6, nombre: 'Religioso' },
+    categoria: { id: 3, nombre: 'Collares' },
+    fotos: [ { id: 8, url: 'https://m.media-amazon.com/images/I/51T6nBs1+oL._AC_SX679_.jpg' } ],
+    fechaCreacion: new Date('2024-08-10T13:45:00'),
+    fechaActualizacion: new Date('2024-08-10T13:45:00'),
   },
   {
     id: 9,
@@ -137,9 +149,10 @@ export const PRODUCTOS_MOCK: Producto[] = [
     material: { id: 1, nombre: 'Plata 925' },
     sexo: { id: 3, nombre: 'Unisex' },
     collection: { id: 5, nombre: 'Bautizo' },
-    fotos: [
-      { id: 9, url: 'https://m.media-amazon.com/images/I/415h3SuMXOL._AC_SX679_.jpg' }
-    ]
+    categoria: { id: 2, nombre: 'Brazaletes' },
+    fotos: [ { id: 9, url: 'https://m.media-amazon.com/images/I/415h3SuMXOL._AC_SX679_.jpg' } ],
+    fechaCreacion: new Date('2024-09-05T09:30:00'),
+    fechaActualizacion: new Date('2024-09-06T10:15:00'),
   },
   {
     id: 10,
@@ -153,9 +166,10 @@ export const PRODUCTOS_MOCK: Producto[] = [
     material: { id: 1, nombre: 'Plata 925' },
     sexo: { id: 2, nombre: 'Mujer' },
     collection: { id: 1, nombre: 'Bodas y Compromisos' },
-    fotos: [
-      { id: 10, url: 'https://m.media-amazon.com/images/I/719suzxUUkL._AC_SX679_.jpg' }
-    ]
+    categoria: { id: 1, nombre: 'Anillos' },
+    fotos: [ { id: 10, url: 'https://m.media-amazon.com/images/I/719suzxUUkL._AC_SX679_.jpg' } ],
+    fechaCreacion: new Date('2024-10-12T15:00:00'),
+    fechaActualizacion: new Date('2024-10-12T15:00:00'),
   },
   {
     id: 11,
@@ -168,9 +182,11 @@ export const PRODUCTOS_MOCK: Producto[] = [
     disponible: true,
     material: { id: 2, nombre: 'Plata 950' },
     sexo: { id: 1, nombre: 'Hombre' },
-    fotos: [
-      { id: 11, url: 'https://m.media-amazon.com/images/I/51bwrlalafL._AC_UL480_FMwebp_QL65_.jpg' }
-    ]
+    collection: { id: 3, nombre: 'Caballero Exclusivo' },
+    categoria: { id: 3, nombre: 'Collares' },
+    fotos: [ { id: 11, url: 'https://m.media-amazon.com/images/I/51bwrlalafL._AC_UL480_FMwebp_QL65_.jpg' } ],
+    fechaCreacion: new Date('2024-11-01T10:00:00'),
+    fechaActualizacion: new Date('2024-11-02T11:45:00'),
   },
   {
     id: 12,
@@ -183,8 +199,10 @@ export const PRODUCTOS_MOCK: Producto[] = [
     disponible: true,
     material: { id: 1, nombre: 'Plata 925' },
     sexo: { id: 2, nombre: 'Mujer' },
-    fotos: [
-      { id: 12, url: 'https://m.media-amazon.com/images/I/51K1MBjlLVL._AC_UL480_FMwebp_QL65_.jpg' }
-    ]
+    collection: { id: 4, nombre: 'Básicos' },
+    categoria: { id: 3, nombre: 'Collares' },
+    fotos: [ { id: 12, url: 'https://m.media-amazon.com/images/I/51K1MBjlLVL._AC_UL480_FMwebp_QL65_.jpg' } ],
+    fechaCreacion: new Date('2024-12-05T12:00:00'),
+    fechaActualizacion: new Date('2024-12-05T12:00:00'),
   }
 ];

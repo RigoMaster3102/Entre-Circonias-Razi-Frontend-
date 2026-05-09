@@ -6,11 +6,12 @@ import { UiService } from '../../../../infrastructure/services/ui.service';
 
 @Component({
   selector: 'app-main-layout',
-  imports: [HeaderComponent, FooterComponent, SidebarComponent],
+  imports: [HeaderComponent, FooterComponent, SidebarComponent,],
   templateUrl: './main-layout.component.html',
   styleUrl: './main-layout.component.css',
 })
 export class MainLayoutComponent {
 
     menuActivo = inject(UiService);
+
 }

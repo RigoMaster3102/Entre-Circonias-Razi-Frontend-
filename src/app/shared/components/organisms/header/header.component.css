@@ -7,6 +7,11 @@ header{
   color: #FFFFFF;
 }
 
+.header-search-activo{
+  background-color: #FFFFFF;
+  color: #000000
+}
+
 .header-left{
   flex: 1;
   display: flex;
@@ -58,4 +63,9 @@ header{
     margin-right: 0;
     justify-content: flex-start;
   }
+}
+
+a{
+  all: unset;
+  cursor: pointer;
 }

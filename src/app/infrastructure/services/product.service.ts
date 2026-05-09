@@ -15,7 +15,23 @@ export class ProductService implements ProductoRepository {
       return of(PRODUCTOS_MOCK);
   }
 
-  getProductoById(id: number): Observable<Producto | undefined> {
-    return of(PRODUCTOS_MOCK.find(joya => joya.id === id));
+  getProductosByCriteria(search: string): Observable<Producto[]> {
+
+    if(!search){
+      return of(PRODUCTOS_MOCK);
+    }
+
+    const searchTermLower = search.toLocaleLowerCase();
+
+    const filteredProducts = PRODUCTOS_MOCK.filter(product => {
+
+      const titleMatch = product.titulo.toLowerCase().includes(searchTermLower);
+
+      const categoryMatch = product.categoria?.nombre.toLowerCase().includes(searchTermLower);
+
+      return titleMatch || categoryMatch;
+
+    });
+    return of(filteredProducts);
   }
 }

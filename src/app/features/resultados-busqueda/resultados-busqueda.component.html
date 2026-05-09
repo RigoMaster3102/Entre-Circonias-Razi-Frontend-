@@ -1,0 +1,19 @@
+<app-main-layout>
+  @if((heroImage())){
+    <app-hero   title="{{pageTitle() | titlecase}}" imageUrl="{{heroImage()}}" [showButton]="false" />
+  }@else{
+    <h1>"{{pageTitle() | titlecase}}"</h1>
+  }
+
+  <div>
+    @for (item of products(); track item.id) {
+
+      <app-product-card [imageUrl]="item.fotos[0].url" [name]="item.titulo" [price]="item.precio" [isMoreButton]="false"/>
+
+    }@empty {
+      <h3>No se encontraron joyas para tu busqueda</h3>
+  }
+  </div>
+
+
+</app-main-layout>
